@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { AppRegistry, Image, StyleSheet, View, Button, Alert } from 'react-native';
-import TextComponent from './TextComponent.js';
+
 
 export default class Pic extends Component {
   render() {
@@ -10,7 +10,6 @@ export default class Pic extends Component {
     return (
       <View>
         <Image source={pic} style={styles.pic}/>
-        <TextComponent message={'Tämä viesti menee textcomponentille'} />
 
         <Button color="#40724a"
           onPress={() => {

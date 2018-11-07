@@ -1,10 +1,10 @@
 import React from 'react';
 import { Image, StyleSheet, Text, View, ScrollView, StatusBar } from 'react-native';
 import { AppLoading, Font } from 'expo';
-import Pic from './components/Pic.js';
-import FrontPage from './components/FrontPage.js';
-import Colors from './components/Colors.js';
-import ToDo from './components/ToDo.js';
+import FrontPage from './screens/FrontPage.js';
+import Colors from './screens/ColorfulPage.js';
+import PicturePage from './screens/PicturePage.js';
+import ToDo from './screens/ToDo.js';
 import { createStackNavigator } from 'react-navigation';
 
 const RootStack = createStackNavigator(
@@ -15,8 +15,8 @@ const RootStack = createStackNavigator(
     Colors: {
       screen: Colors,
     },
-    Pic: {
-      screen: Pic,
+    PicturePage: {
+      screen: PicturePage,
     },
     ToDo: {
       screen: ToDo,
