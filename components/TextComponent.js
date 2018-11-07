@@ -17,6 +17,7 @@ const styles = StyleSheet.create({
   styledText: {
     fontSize: 20, 
     fontFamily: 'raleway-regular',
-    padding: 10
+    padding: 10, 
+    margin: 10
   }
 });

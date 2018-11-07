@@ -10,7 +10,7 @@ export default class FrontPage
   };
 
   state = {
-    frontPageText: 'Text as a state'
+    frontPageText: 'Text text text'
   };
 
   render() {
@@ -32,26 +32,26 @@ export default class FrontPage
           <View style={styles.smallerContainer}>
             <View style={styles.buttonContainer}>
               <Button color="#383838"
-                title="Go to see a flex test"
+                title="Tekstinsyöttötesti"
                 onPress={() => this.props.navigation.navigate('Colors')}
               />
             </View>
             <View style={styles.buttonContainer}>
               <Button color="#383838"
-                title="Go see a picture screen"
+                title="Kuva ja nappula"
                 onPress={() => this.props.navigation.navigate('Pic')}
               />
             </View>
             <View style={styles.buttonContainer}>
               <Button color="#383838"
-                title="Go see a picture screen"
-                onPress={() => this.props.navigation.navigate('Pic')}
+                title="Muistilista"
+                onPress={() => this.props.navigation.navigate('ToDo')}
               />
             </View>
           </View>
           
           <View style={styles.smallerContainer}>
-            <Text style={styles.smallerTitle}>This is Front page screen</Text>
+            <Text style={styles.smallerTitle}> Tämä etusivu scrollautuu niin pitkälle kuin sisältöä riittää </Text>
             <Text>{this.state.frontPageText}</Text>
             <Text>{this.state.frontPageText}</Text>
             <Text>{this.state.frontPageText}</Text>

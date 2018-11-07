@@ -10,13 +10,13 @@ export default class Pic extends Component {
     return (
       <View>
         <Image source={pic} style={styles.pic}/>
-        <TextComponent message={'Some fucking message'} />
+        <TextComponent message={'Tämä viesti menee textcomponentille'} />
 
         <Button color="#40724a"
           onPress={() => {
-            Alert.alert('You tapped the button!');
+            Alert.alert('Piip piip');
           }}
-          title="Tap me!"
+          title="Paina tästä"
         />
       </View>
     );

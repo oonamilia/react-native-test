@@ -4,6 +4,7 @@ import { AppLoading, Font } from 'expo';
 import Pic from './components/Pic.js';
 import FrontPage from './components/FrontPage.js';
 import Colors from './components/Colors.js';
+import ToDo from './components/ToDo.js';
 import { createStackNavigator } from 'react-navigation';
 
 const RootStack = createStackNavigator(
@@ -17,6 +18,9 @@ const RootStack = createStackNavigator(
     Pic: {
       screen: Pic,
     },
+    ToDo: {
+      screen: ToDo,
+    },
   },
   {
     initialRouteName: 'FrontPage',
@@ -25,8 +29,7 @@ const RootStack = createStackNavigator(
 
 export default class App extends React.Component {
   state = {
-    loaded: false,
-    kittens: 'miuskis',
+    loaded: false
   };
 
   componentWillMount() {
