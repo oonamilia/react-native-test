@@ -25,7 +25,7 @@ Koska React Nativella tehty käyttöliittymä on kokonaan natiivi, sen suoritust
 <img src="https://d1eyrqnzwgnjjq.cloudfront.net/wp-content/uploads/2017/03/Image-1.png" width="600px" />
 <p style="font-size: 8px">https://mentormate.com/blog/react-native-components/ </p>
 
-<p>Reactin tapaan React Native koostuu komponenteista, joilla rakennetaan käyttöliittymä. Reactista poiketen React Native käyttää HTML elementtien sijaan natiiveja elementtejä, kuten View ja Text. </p>
+<p>Reactin tapaan React Native koostuu komponenteista, joilla rakennetaan käyttöliittymä. Reactista poiketen React Native käyttää HTML elementtien sijaan komponentteja kuten View ja Text. </p>
 
 <img src="https://appdividend.com/wp-content/uploads/2018/08/React-Native-Swiper-Component-Example.png" width="600px" />
 <p style="font-size: 8px">https://appdividend.com/2018/08/13/react-native-swipe-components-example-tutorial/ </p>
@@ -36,27 +36,76 @@ Koska React Nativella tehty käyttöliittymä on kokonaan natiivi, sen suoritust
 
 <h4 id="komps">Komponentit</h4>
 
-<p>Komponenteista koostuva rakenne sovelluksessa (kuvassa webbisovellus, mutta toimii nativessa samaan tapaan)</p>
+<p>Reactissa kaikki käyttöliittymässä näkyvä sisältö koostuu komponenteista. Komponenteista koostuva rakenne sovelluksessa (kuvassa webbisovellus, mutta toimii React Nativessa samaan tapaan)</p>
 
 <img src="https://image.slidesharecdn.com/reactcomponents-171006140740/95/react-components-lifecycle-react-tutorial-for-beginners-reactjs-training-edureka-5-638.jpg?cb=1507298999"  width="500px" />
 <p style="font-size: 8px">https://www.slideshare.net/EdurekaIN/react-components-lifecycle-react-tutorial-for-beginners-reactjs-training-edureka</p>
 
-<p>  </p>
+<p> Hello World esimerkki React Native komponentista: </p>
+
+    import React, { Component } from 'react';
+    import { Text, View } from 'react-native';
+
+    export default class HelloWorld extends Component {
+      render() {
+        return (
+          <View>
+            <Text>Hello world!</Text>
+          </View>
+        );
+      }
+    }
+
+<p> Render metodi palauttaa komponentin kuvauksen ja React Native kasaa ja näyttää sen. </p>
+
+<p>Omiin komponentteihin voi viitata toisesssa komponentissa yksinkertaisesti:</p>
+
+      <HelloWorld />
+
+<p>Tämä näyttäisi esimerkin "Hello World!" tekstin toisessa komponentissa</p>
 
 <h4 id="propsstate">Reactin Props ja State </h4>
 
+<p>Props (properties) lähetetään aina parent-komponentilta kun viitataan komponenttiin, ja sen ei tulisi muuttua enää komponentin sisällä.</p>
+
+      <HelloWorld Message={'Hello'} />
+      
+Siihen viitataan komponentissa: {this.props.Message}
+
 <img src="http://www.medianic.co.uk/wp-content/uploads/2017/11/Stateful-vs-Stateless-Component-Tutorial-Component-with-prop.jpg" width="500px" />
+
+<p>State puolestaan on komponentin sisällä käytettävä, muuttuvaa dataa sisältävä ja se määritellään ennen render-metodia. </p>
+
+        export default class HelloWorld extends React.Component {
+            constructor(props) {
+              super(props);
+              this.state = {
+                greeting: 'hello',
+              };
+            }
+
+            render() {
+              return (
+                <Text>
+                  {this.state.greeting}
+                </Text>
+              );
+            }
+          }
+
+
 <img src="https://cms-assets.tutsplus.com/uploads/users/1795/posts/29541/image/Stateful-vs-Stateless-Component-Tutorial-Component-with-state.jpg" width="500px" />
 <p style="font-size: 8px">http://www.medianic.co.uk/stateful-vs-stateless-functional-components-in-react/</p>
 
 <h4 id="styles"> Tyylit CSS:llä </h4>
 
 <p>React Native käyttää CSS:ää, joka määritellään Javasript objektina. Pienenä erona CSS:ään React Nativessa tyylien nimet on kirjoitettu camelCase:nä. Esim: </p>
-<p>const styles = StyleSheet.create({</p>
-   <p> container: { </p>
-    <p>    backgroundColor: '#FFFFFF',</p>
-   <p>     paddingTop: 24</p>
-   <p> } });</p>
+
+    const styles = StyleSheet.create({
+        container: { 
+           backgroundColor: '#FFFFFF',
+           paddingTop: 20
+        } });
    
 <h4 id="styles"> CSS </h4>
 
@@ -85,11 +134,11 @@ Koska React Nativella tehty käyttöliittymä on kokonaan natiivi, sen suoritust
 <h3 id="teht">Tehtävä: </h3>
 
 1. a) Tee oma sovellus Reactilla. Voi ottaa mallia testisovelluksesta, mutta sen pitäisi olla itse tehty tyhjältä pohjalta. Sovellukseen tulee: 
-    - Vähintään 3 komponenttia 
+    - Vähintään 4 komponenttia 
     - Navigointi vähintään 2 sivulle (Pitää asentaa react-navigation: npm install --save react-navigation) 
     - State ja props käytössä 
     
-   Sovelluksen aihe on vapaa, mutta kannattaa valita joku aihe niin sovelluksen tekemisellä on selkeämpiä tavoitteita
+   Sovelluksen aihe on vapaa.
    
 2. Tee sovelluksesta .apk tai .ipa
   - expo build:android tai expo build:ios (https://docs.expo.io/versions/latest/distribution/building-standalone-apps)
