@@ -133,7 +133,7 @@ Siihen viitataan komponentissa: {this.props.Message}
 <h4>3. Yhdistä puhelin USB:llä (developer mode ja salli usb) tai avaa emulaattori </h4>
 
         Puhelin ja usb: 
-              expo start --localhost –a
+              expo start --localhost -a
         Emulaattori: 
               expo start -a 
             
