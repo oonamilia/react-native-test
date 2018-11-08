@@ -19,7 +19,7 @@ Tarvittavat ohjelmat:
 
         npm install 
   
-3. Yhdistä puhelin USB:llä (developer mode ja salli usb) tai avaa emulaattori 
+3. Yhdistä puhelin USB:llä (developer mode ja salli usb https://kayttoohje.fi/opasteartikkelit/nain-kytket-android-puhelimen-usb-vianetsinnan-paalle/) tai avaa emulaattori 
 
         Puhelin ja usb: 
               expo start --localhost -a
