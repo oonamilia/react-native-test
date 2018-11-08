@@ -145,6 +145,7 @@ Siihen viitataan komponentissa: {this.props.Message}
     - Vähintään 4 komponenttia 
     - Navigointi vähintään 2 sivulle (Pitää asentaa react-navigation: npm install --save react-navigation) 
     - State ja props käytössä 
+    - Laita elementeille tyylejä
     
    Sovelluksen aihe on vapaa.
    
