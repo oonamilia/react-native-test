@@ -12,7 +12,8 @@ Tarvittavat ohjelmat:
 # Ohjeet react-native-test sovelluksen avaamiseen: 
 
 1. Asenna Expo CLI
-  npm install -g expo-cli
+  
+        npm install -g expo-cli
 
 2. Git clone ja mene kansioon 
 
