@@ -114,9 +114,7 @@ Siihen viitataan komponentissa: {this.props.Message}
            backgroundColor: '#FFFFFF',
            paddingTop: 20
         } });
-   
-<h4 id="styles"> CSS </h4>
-
+        
 <h3 id="asennus"> Ohjeet uuden projektin tekemiseen: </h3>
 
 <h4>1. Asenna <a href="https://expo.io/">Expo CLI</a></h4>
