@@ -18,19 +18,25 @@ Sisältö:
 </ul>
 
 <h3 id="reactnative">React Native</h3>
-<p>React Nativella voi tehdä täysin natiiveja mobiilisovelluksia Adroidille ja iOS:lle käyttämällä JavaScriptiä. Se käyttää samoja käyttöliittymien rakennuspalikoita kuin natiivit sovellukset, mutta ne kasataan Javasciptillä. 
+<p>React Nativella on Reactiin pohjautuva framework, jolla voi tehdä täysin natiiveja mobiilisovelluksia Adroidille ja iOS:lle käyttämällä JavaScriptiä. Se käyttää samoja käyttöliittymien rakennuspalikoita kuin natiivit sovellukset, mutta ne kasataan Javasciptillä. 
 Koska React Nativella tehty käyttöliittymä on kokonaan natiivi, sen suoritusteho on parempi kuin esim. hybridisovellusten. 
 </p>
 
 <img src="https://d1eyrqnzwgnjjq.cloudfront.net/wp-content/uploads/2017/03/Image-1.png" width="600px" />
 <p style="font-size: 8px">https://mentormate.com/blog/react-native-components/ </p>
 
-<p>Reactin tapaan React Native koostuu komponenteista, joilla rakennetaan käyttöliittymä. Reactista poiketen React Native käyttää HTML elementtien sijaan komponentteja kuten View ja Text. </p>
+<p>Reactin tapaan React Native koostuu komponenteista, joilla rakennetaan käyttöliittymä. Reactista poiketen React Native käyttää HTML elementtien sijaan natiiveja elementtejä kuten View ja Text, jotka ovat kuin html:n div ja p. Muuten se on hyvin samanlainen kuin React. </p>
 
 <img src="https://appdividend.com/wp-content/uploads/2018/08/React-Native-Swiper-Component-Example.png" width="600px" />
 <p style="font-size: 8px">https://appdividend.com/2018/08/13/react-native-swipe-components-example-tutorial/ </p>
 
-<p> React Nativen kanssa voi käyttää  </p>
+<h2>Miten React Native toimii?</h2>
+
+<p> Selaimessa toimiva React käyttää selaimen DOM:in (Document object model) sijaan omaa virtuaalista DOM:ia. Tämä päivittää React-sovelluksen automaattisesti päivittämättä selaimen sivua mutta renderöimällä muutoksen sen DOM:iin, ja päivittää vain ne osat, jotka ovat muuttuneet. </p>
+
+<p> React Native käyttää natiiveja ohjelmointikieliä komponenttien renderöintiin. Tämä onnistuu "connector":lla, joka antaa Reactille rajapinnan mobiilikäyttöliittymien natiiveille UI-elementeille. </p>
+
+<img src="http://qph.fs.quoracdn.net/main-qimg-3e10b8469def465ae0f2baac9b301c41" />
 
 <h3 id="perus">React Nativen peruskäsitteitä </h3>
 
@@ -63,6 +69,8 @@ Koska React Nativella tehty käyttöliittymä on kokonaan natiivi, sen suoritust
       <HelloWorld />
 
 <p>Tämä näyttäisi esimerkin "Hello World!" tekstin toisessa komponentissa</p>
+
+<p>Tässä esimerkissä käytettiin View ja Text elementtejä, muita https://facebook.github.io/react-native/docs/components-and-apis </p>
 
 <h4 id="propsstate">Reactin Props ja State </h4>
 
