@@ -79,7 +79,7 @@ export default class App extends React.Component {
     //       <Text style={styles.basicParagraph}> Lorem ipsum dolor sit amet, consectetur adipiscing elit. In elementum laoreet nisl, ut venenatis dolor aliquet quis. Nam rhoncus ipsum orci, sed aliquam velit dignissim nec. Nulla non rhoncus turpis, id ornare mi. Mauris ac lacus ante. Donec tincidunt ipsum a facilisis tempus. Curabitur quis nisi est. Suspendisse semper enim sit amet eros mattis tincidunt. Maecenas congue urna vitae ex dapibus, sed commodo nisi convallis. Mauris mattis rhoncus varius. </Text>
     //     </View>
 
-    //     <Colors message={'Some fucking message'}/>
+    //     <Colors message={'Some message'}/>
           
     //     <View>
     //       <Text> {this.state.kittens} </Text>
