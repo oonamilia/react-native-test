@@ -22,7 +22,7 @@ Tarvittavat ohjelmat:
 3. Yhdistä puhelin USB:llä (developer mode ja salli usb) tai avaa emulaattori 
 
         Puhelin ja usb: 
-              expo start --localhost –a
+              expo start --localhost -a
         Emulaattori: 
               expo start -a 
         Puhelin ilman usb, samassa wlanissa
